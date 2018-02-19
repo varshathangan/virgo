@@ -1,4 +1,4 @@
-package Toolsqa;
+package virgo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Assignment_2 {
+public class VirgoAssignment {
 
 	public static void main(String[] args) {
         System.out.println("Virgo Signup automation");

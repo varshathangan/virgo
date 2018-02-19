@@ -1,4 +1,4 @@
-package Toolsqa;
+package toolsqa;
 
 import java.awt.AWTException;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class RunApplication {
+public class ToolsQAAssignment {
 
 	public static void main(String[] args) throws AWTException {
 		System.out.println("Tools QA automation");
