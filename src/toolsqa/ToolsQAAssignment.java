@@ -1,6 +1,7 @@
 package toolsqa;
 
 import java.awt.AWTException;
+import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -15,12 +16,13 @@ public class ToolsQAAssignment {
 		System.out.println("Tools QA automation");
 		
 		//opening chrome browser
-		System.setProperty("webdriver.chrome.driver","F:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","libraries/chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		//Go to http://toolsqa.com/automation-practice-form/
-		driver.get("http://toolsqa.com/automation-practice-form/");
+		String url="http://toolsqa.com/automation-practice-form/";
+		driver.get(url);
 		
 		//scrolling down the web page
 		JavascriptExecutor js=(JavascriptExecutor) driver;
@@ -52,7 +54,8 @@ public class ToolsQAAssignment {
 		
 		//Upload a file from your local machine using Profile Picture
 		WebElement upload=driver.findElement(By.id("photo"));
-		upload.sendKeys("D:\\photo.jpg");
+		String path="libraries\\photo.jpg";
+		upload.sendKeys(new File(path).getAbsolutePath());
 		System.out.println("Photo uploaded");
 		
 		//Click and Select “Manual Testing” and “Automation Tester” checkboxes
